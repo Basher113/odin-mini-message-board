@@ -6,12 +6,11 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Message form</h1>
-  <form method="POST" action="/new">
-    <input type="text" name="user" placeholder="user">
-    <input type="text" name="text" placeholder="text">
-    <button>Submit</button>
-  </form>
+  <div class="message-detail">
+    <div>User: <%= message.user %></div>
+    <div>Text: <%= message.text %></div>
+    <div>Date Added: <%= message.added %></div>
+  </div>
   <a href="/">Go to home</a>
 </body>
 </html>
